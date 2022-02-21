@@ -1,0 +1,174 @@
+.side-menu {
+    position: fixed;
+    background: #000;
+    width: 300px;
+    height: 100%;
+    padding: 30px 20px;
+    display: flex;
+    justify-content:space-around;
+    flex-direction: column;
+    transition:  width 0.2s ease-in;
+}
+
+
+
+.side-menu_header {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.side-menu .logo {
+    width: 40px;
+    height: 40px;
+}
+
+.side-menu .logo img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.toggle-menu-btn {
+    cursor: pointer;
+}
+
+.side-menu_search-input input {
+    border: 0;
+    outline: none;
+    height: 35px;
+    background: #333;
+    border-radius: 5px;
+    display: block;
+    margin: 20px 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 40px;
+    color: #666;
+}
+
+.divider{
+    width: 100%;
+    height: 1px;
+    border-radius: 1px;
+    background: #333;
+}
+
+.side-menu_main a{
+    display: flex;
+    align-items: center;
+}
+
+.side-menu_main p{
+ color: #666;
+ font-size: 25px;
+ margin-left: 10px;
+}
+
+.side-menu_main i{
+ color: #666;
+ font-size: 30px;
+ cursor: pointer;
+}
+
+.side-menu_main-links p:hover,
+.side-menu_main-links i:hover{
+ color: #fff;
+}
+
+.side-menu_main-links  {
+    padding: 5px 40px;
+    cursor: pointer;
+}
+
+ .sub-menu {
+     margin-left: 70px;
+     padding-left: 15px;
+    border-left: 1px solid #333;
+    box-sizing: border-box;
+}
+
+.sub-menu i {
+    color: #666;
+    font-size: 20px;
+}
+
+.sub-menu:hover {
+    border-left: 1px solid #fff;
+}
+
+.side-menu_footer {
+    width: 100%;
+    height: 100px;
+    background: #333;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-menu_footer-avatar {
+ width: 60px;
+ height: 60px;
+ margin-right: 10px;
+}
+
+.side-menu_footer-avatar img {
+ width: 100%;
+ height: 100%;
+ border-radius: 50%;
+}
+
+.side-menu_footer-info {
+    margin: 0 5px;
+    color: #fff;
+}
+
+.side-menu_footer-info h5 {
+    font-size: 20px;
+    margin: 0;
+}
+.side-menu_footer-info p {
+    font-size: 15px;
+    margin: 0;
+}
+
+/*********** Sidenav Inactive ***********/
+
+.side-menu.inactive{
+    width: 100px;
+}
+
+.side-menu.inactive .side-menu_footer-info {
+    display: none;
+}
+
+.side-menu.inactive .side-menu_footer-avatar {
+      margin-left: 10px;
+}
+
+.side-menu.inactive .side-menu_main {
+      padding: 20px 0;
+}
+
+.side-menu.inactive .side-menu_main p  {
+      display: none;
+}
+
+.side-menu.inactive .side-menu_main-links {
+    padding: 20px 40px;
+}
+
+.side-menu.inactive .sub-menu{
+    margin-left: 55px;
+    margin-bottom: 10px;
+}
+
+.side-menu.inactive .sub-menu i{
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.side-menu.inactive .sub-menu i:hover{
+    color: #fff;
+}
