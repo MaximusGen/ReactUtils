@@ -51,6 +51,28 @@
     font-size: 2rem;
 }
 
+.container-scrollfull .content a {
+    background: #fff;
+    color: #111;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 10px 40px;
+    font-size: 2rem;
+    transition: 0.5s ease;
+}
+
+.container-scrollfull .content a:hover {
+   transform: scale(1.5) translateX(10%);
+   transition: transform 0.5s ease;
+}
+
+
+.container-scrollfull .content a i{
+    font-size: 2rem;
+}
+
 .container-scrollfull .content p {
     background: #fff;
     color: #111;
@@ -58,3 +80,4 @@
     font-size: 2rem;
     margin-top: 10px;
 }
+

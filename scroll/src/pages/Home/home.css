@@ -22,6 +22,7 @@
     background-color: #fff;
     padding: 2rem;
     font-size: 2rem;
+    margin:0 20px;
     border-radius: 15px;
     font-weight: 600;
     -webkit-box-reflect: below 0px linear-gradient(transparent, #0002);
@@ -31,7 +32,6 @@
 .links p:hover {
     color: #000;
     transition: box-shadow 0.5s ease-in-out;
-    transition-delay:1s;
     box-shadow: 0 0 10px #ccc,
                 0 0 20px #ccc,
                 0 0 40px #ccc,

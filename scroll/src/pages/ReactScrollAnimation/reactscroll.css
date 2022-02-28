@@ -1,0 +1,44 @@
+.section-3 {
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:center;
+}
+
+.img {
+    width: 500px;
+    height: 50vh;
+}
+
+.img-section {
+    width: 200px;
+    height: 50vh;
+}
+
+.one {
+    background: url(../../assets/bg1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.two {
+    background: url(../../assets/bg2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.three {
+    background: url(../../assets/bg3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.four {
+    background: url(../../assets/bg4.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}

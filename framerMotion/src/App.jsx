@@ -1,43 +1,73 @@
 import {motion} from 'framer-motion'
-import { useState } from 'react'
+import { useRef, useState, useEffect } from 'react'
+import images from './images'
 import './App.css'
 
 
 function App() {
-   const [show, hide] = useState(false)
+ const [width, setWidth] = useState(0)
+ const carousel = useRef()
 
-  const famer ={
-    duration: 1.5,
-    type: 'tween',
+  useEffect(() =>{
+    // console.log(carousel.current.scrollWidth, carousel.current.offsetWidth);
+    setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+  }, [carousel])
+
+  const transition ={
+    duration: 4,
+    repeat: Infinity,
+    delayTransition:0.5
   }
 
-const hello = {
-   in: {
-    opacity: 0,
-    x: 300,
-    y:300
-   },
-   out:{
-    opacity: 1,
-    x: 0,
-    y:0,
-   }
-}
-
+  const variants ={
+    initial:{
+      x:-1000
+    },
+    out:{
+      x:1000
+    },
+  }
 
   return (
-    <div className="container">
-      <motion.div
-       animate={{ y:0}}
-       initial={{y:310}}
-       transition={{ease: [0.6,0.01, -0.05, 0.9], duration: 1}}
-       className="hello"
-       >
-        Hello World
-      </motion.div>
+    <>
 
+
+     <div className="motion-inifinity">
+       <motion.h1
+       initial="initial"
+       animate="out" 
+       variants={variants}
+       transition={transition}
+       className="hello">Slide to right</motion.h1>
+       <motion.h1
+       initial="initial"
+       animate="out" 
+       variants={variants}
+       transition={transition}
+       className="hello">Slide to left</motion.h1>
+     </div>
+
+    <div className="App">
+      <motion.div ref={carousel} className="carousel" whileTap={{cursor:"grabbing"}}>
+        <motion.div 
+        drag="x" 
+        dragConstraints={{right:0, left: -width}} 
+        className="inner-carousel"
+        >
+            {images.map(image => {
+              return(
+                <motion.div className="item" key={image}>
+                  <img src={image} alt='' />
+                </motion.div>
+              );
+            })}
+        </motion.div>
+      </motion.div>
     </div>
+      </>
   )
 }
+
+
 
 export default App
