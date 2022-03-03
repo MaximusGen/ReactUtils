@@ -1,0 +1,68 @@
+.container-home {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container-home h1 {
+    font-size: 4.5rem;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: #ff4;
+    text-shadow: 0 0 20px #000;
+    cursor: pointer;
+}
+
+
+.home-links {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.home-links p {
+    font-size: 2.5rem;
+    margin: 0 20px;
+}
+
+.home-links a:hover {
+    text-shadow: 0 0 20px #000,
+    0 0 40px #000,
+    0 0 60px #000,
+    0 0 80px #000,
+    0 0 160px #000;
+    transition: 0.5s ease-in-out;
+}
+
+.home-links p::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+}
+
+.home-links p:hover {
+    color: #ff6f61;
+    text-shadow: 0 0 20px #000,
+    0 0 40px #000,
+    0 0 60px #000,
+    0 0 80px #000,
+    0 0 160px #000;
+    transition: all 0.5s ease-in-out;
+}
+.home-links p:hover::after {
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    background-color: #ff6f61;
+}
+
+.home-links .line{
+    width: 0.2rem;
+    background-color: #000000;
+    height: 5rem;
+    cursor: pointer;
+}

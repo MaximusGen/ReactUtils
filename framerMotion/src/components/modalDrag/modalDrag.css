@@ -1,0 +1,47 @@
+.modal {
+    width: clamp(50%,700px,90%);
+    height: min(50%, 300px);
+
+    margin: auto;
+    padding: 0 2rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    background-color: #fff;
+    cursor:grab;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 2rem;
+}
+
+.backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #000000e1;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.button {
+    background:#ff6f61;
+    border: 0;
+    outline: none;
+    padding: 2rem 2.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: var(--font-family);
+    border-radius: 3rem;
+}
+
+.container-modaldrag {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+}

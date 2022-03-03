@@ -1,0 +1,47 @@
+.container-textanimation{
+    background: #1d1d1d;
+    height: 100vh;
+}
+
+/******  InfinityAnimation ********/
+
+.text-infinity {
+    text-shadow: 0 0 20px yellow;
+    text-align: center;
+    font-size: 8rem;
+    font-weight: 600;
+    color: #000;
+    margin: 0 10px;
+}
+
+/******  HoverAnimation ********/
+
+.animation-letters {
+ display: flex;
+ justify-content: center;
+ align-items:center;
+ height: 100vh;
+}
+
+.text-hover {
+    display: flex;
+    justify-content: center;
+    align-items:start;
+    flex-direction: column;
+    color: #fff;
+}
+
+.text-hover h1 {
+    letter-spacing: 5px;
+    font-size: 4rem;
+    font-family: var(--font-family2);
+    margin: 0;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.text-hover span {
+    position: relative;
+    display: inline-block;
+    cursor: default;
+}

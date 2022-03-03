@@ -7,20 +7,16 @@ const Navbar3 = () => {
     const [menuToggle, setToggleMenu] = useState(false)
 
     return (
-        <div className="containernavbar3">
-         <div className="contentbox" id="acceuil"><a href="/">Acceuil</a></div>   
-         <div className="contentbox" id="navbar1"><a href="/navbar1">Navbar 1</a></div>   
-         <div className="contentbox" id="navbar2"><a href="/navbar2">Navbar 2</a></div>   
-         <div className="contentbox" id="sidenav"><a href="/sidenav">Sidenav</a></div>   
+        <div className="containernavbar3">  
         <div className="toggle-button">
         {menuToggle ? (
           <RiCloseLine
-            color="#fff"
+            color="#000"
             size={35}
             onClick={() => setToggleMenu(false)}
           />
         ) : (
-          <RiMenu3Line color="#fff" size={35} onClick={() => setToggleMenu(true)} />
+          <RiMenu3Line color="#000" size={35} onClick={() => setToggleMenu(true)} />
         )}
         </div>
 

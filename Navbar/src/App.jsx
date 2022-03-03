@@ -15,7 +15,6 @@ const App = () => {
          <Route path="/navbar1" element={<Navbar1/>} />
          <Route path="/navbar2" element={<Navbar2/>} />
          <Route path="/navbar3" element={<Navbar3/>} />
-         {/* <Route path="/sidenav" element={<Sidenav/>} /> */}
       </Routes>  
   )
 }
