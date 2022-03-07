@@ -1,0 +1,39 @@
+.container-test {
+ height: 100%;
+}
+
+.content-block {
+    width: 100vw;
+    height: 50vh;    
+}
+
+.content-block:nth-child(odd) {
+    background-color: #000;    
+}
+
+
+.container-btn-scroll {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background-color: transparent;
+}
+
+.btn-empty{
+    opacity: 0;
+}
+
+
+.btn-full {
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: red;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: opacity 1s ease;
+}

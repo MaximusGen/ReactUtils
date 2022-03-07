@@ -23,6 +23,7 @@ const Home = () => {
               <p><motion.a  href="/scrollfull">Scroll Full Page</motion.a></p>
               <p><motion.a  href="/scrollx">Scroll X Page</motion.a></p>
               <p><motion.a  href="/reactscroll"> React Scroll Animation</motion.a></p>
+              {/* <p><motion.a  href="/test"> React Scroll Animation</motion.a></p> */}
           </div>
       </motion.div>
     )

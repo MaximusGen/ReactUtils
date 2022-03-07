@@ -2,19 +2,18 @@ import React from 'react'
 import './App.css'
 import { Routes, Route } from "react-router-dom";
 import Home from './pages/Home/Home'
-import Navbar1 from './pages/navbar1/Navbar1';
-import Navbar2 from './pages/navbar2/Navbar2';
-// import Sidenav from './pages/sidenav/Sidenav';
-import Navbar3 from './pages/navbar3/Navbar3';
+import NavbarResponsive from './pages/navbarResponsive/NavbarResponsive';
+import NavTransitions from './pages/NavTransition/NavTransitions';
+import NavTransitionRight from './pages/NavTransitionRight/NavTransitionRight';
 
 const App = () => {
 
   return (
       <Routes>
          <Route path="/" element={<Home/>} />
-         <Route path="/navbar1" element={<Navbar1/>} />
-         <Route path="/navbar2" element={<Navbar2/>} />
-         <Route path="/navbar3" element={<Navbar3/>} />
+         <Route path="/navbar" element={<NavbarResponsive/>} />
+         <Route path="/navtransition" element={<NavTransitions/>} />
+         <Route path="/navtransitionright" element={<NavTransitionRight/>} />
       </Routes>  
   )
 }
